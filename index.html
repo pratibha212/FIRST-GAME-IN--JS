@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catch The Cheems</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-<div id="wrapper">
+    <div id="wrapper">
         <div class="screen" id="screen1">
+            <h2>Catch The Character</h2>
             <button id="start">Start The Game</button>
         </div>
         <div class="screen" id="screen2">
@@ -19,9 +21,23 @@
                 <a href=""><img src="saktiman.jpg" alt="shaktimaan"></a>
             </div>
         </div>
+        <div class="screen" id="screen3">
+            <div class="top">
+                <p id="timer">Time: <span>00</span></p>
+                <p id="score">Score:<span>00</span></p>
+            </div>
+            <div class="main"></div>
+        </div>
     </div>
-
-
-<script src="index.js"></script>
+    <div class="screen" id="screen4">
+        <div class="mainscreen">
+            <div class="final-score">
+                <h2>Game Over</h2>
+                <p>Your Score: <span id="final-score"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
+
 </html>

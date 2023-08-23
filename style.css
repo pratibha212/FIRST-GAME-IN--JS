@@ -5,9 +5,9 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
-    background: #314755;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #314755;  
+    background: -webkit-linear-gradient(to right, #26a0da, #314755); 
+    background: linear-gradient(to right, #26a0da, #314755); 
     
 }
 .screen{
@@ -31,12 +31,13 @@ body{
     font-size: 1.25rem;
     cursor: pointer;
     transition: all 0.45s;
+    border-radius: 10px;
 }
 #screen1 button:hover{
     background-color: #fff;
     color: #000;
 }
-#screen2{
+#screen2, #screen3{
     display: none;
 }
 #screen2 .photo-wrapper{
@@ -52,4 +53,62 @@ body{
     width: 150px;
     height: 150px;
     margin: 0 1rem;
+}
+#screen3 .main{
+    position: relative;
+}
+#screen3 img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+#screen4{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+.mainscreen {
+   
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 450px;
+    background-color:rgba(245, 245, 245, 0.8);
+    color: black;
+    position: absolute;
+    top: 210px;
+    left: 500px;
+    text-align: center;
+    padding-top: 60px;
+    border-radius: 10px ;
+    box-shadow: 10px 10px 10px gray;
+
+}
+
+.final-score {
+    text-align: center;
+}
+
+.final-score h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.final-score p {
+    font-size: 1.5rem;
+}
+
+.top {
+    font-size: 30px;
+    margin: 10px 10px;
+    
 }
